@@ -59,10 +59,10 @@ function processData() {
       currentColor = color(204, 153, 0);
       break;
     case "nutritional":
-      currentColor = color(64, 250, 200);
+      currentColor = color(91, 37, 134);
       break;
     case "fights":
-      currentColor = color(204, 153, 0);
+      currentColor = color(250, 0, 0, 100);
       break;
   }
 
