@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Delving into Fatality</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <!-- <script src="../p5.js"></script> -->
+  <!-- <script src="../addons/p5.sound.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mappa-mundi@0.0.4"></script>
+
+	<!-- <script src="sketch.js"></script> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/gif" href="favicon.ico">
+
+</head>
+
+<body>
+  <div class="introduction">
+    <div id="text">
+      <h1 id="main">Determinants of Death</h1>
+      <p id="disclaimer"><b>Disclaimer: </b> We are novices, so sorry for the non-solid UI.</p>
+
+        <div class="container">
+          <img class="container__image" src="images/shock1.jpg" style="width:100%;">
+          <div class="container__text">
+            <h2>Who is the culprit in Fatality?</h2>
+            <p>"56 million people died in 2017". What caused their death?</p><br>
+
+          </div>
+
+        </div>
+          <!-- <p id="introDepr">
+          56 million people died in 2017. What caused their death?
+          How did the causes of death change over time and differ between different countries and world regions?
+          These are the big questions we are answering here.
+          </p>
+          <img id="intro "src="images/shock1.jpg" width="400" height="200"> -->
+
+    </div>
+  </div>
+
+<table>
+  <section>
+  <div id="wrapper">
+		<h3 id="chartTitle">Select cause of death!</h3>
+		<select id="dataSource">
+      <option selected disabled hidden>Select Cause</option>
+			<option value="cardiovascular">Cardiovascular</option>
+			<option value="alzheimer">Alzheimer</option>
+			<option value="drugs">Drugs</option>
+      <option value="nutritional">Nutritional Deficiencies</option>
+			<option value="fights">Voilence</option>
+		</select>
+  </div>
+  </section>
+  <section>
+         <div id="sketch-holder"><script src="sketch.js"></script></div>
+ </section>
+
+</table>
+
+</body>
+
+</html>
