@@ -6,13 +6,15 @@ let generate = [];
 let latdata;
 let canvas;
 let  currentColor;
+let sliderValue;
 
 const mappa = new Mappa('Leaflet');
 const options = {
   lat: 0,
   lng: 0,
   zoom: 2,
-  style: "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+  style: "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+  // style: "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
 }
 
 
@@ -33,20 +35,32 @@ function setup() {
   // slider = createSlider(1990, 2017, 1990);
   // slider.position(50, 200);
   // slider.style('width', '80px');
-
   dataSource = select('#dataSource'); // get the DOM element from the HTML
   dataSource.changed(processData); // assign callback
+
   currentColor = color(64, 250, 200, 100);
 
-
+  slide = document.getElementById("slide");
+  sliderDiv = document.getElementById("sliderAmount");
+  sliderDiv.innerHTML = 1990;
+  // console.log("Year value is =", sliderDiv);
+  slide.onchange = function() {
+      sliderDiv.innerHTML = this.value;
+      sliderValue = this.value;
+      // console.log("Inside change function = ", sliderValue, "dive = ", sliderDiv);
+      myMap.onChange(processData);
+    }
 }
 
 function processData() {
   generate = [];
-  let latest = table.findRows("2017", "Year");
 
+  let yearSource = sliderValue;
+  let latest = table.findRows(yearSource, "Year");
   let cause = dataSource.value();
+
   // console.log("The cause of death is = ", cause);
+  // console.log("Year value is =",yearSource);
 
   switch (cause) {
     case "cardiovascular":
