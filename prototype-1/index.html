@@ -19,29 +19,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/mappa-mundi@0.0.4"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 
-	<!-- <script src="sketch.js"></script> -->
+
+	<!-- <script src="sketch2.js"></script> -->
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="icon" type="image/gif" href="favicon.ico">
 
 </head>
 
-<body>
+<body onload="initViz(); draw();">
   <div class="introduction">
     <div id="text">
       <h1 id="main">Determinants of Death</h1>
       <p id="disclaimer"><b>Disclaimer: </b> We are novices, so sorry for the non-solid UI.</p>
 
-        <div class="container">
-          <img class="container__image" src="images/shock1.jpg" style="width:100%;">
-          <div class="container__text">
-            <h2>Who is the culprit in Fatality?</h2>
-            <p>"56 million people died in 2017". What caused their death?</p><br>
 
-          </div>
-
-        </div>
           <!-- <p id="introDepr">
           56 million people died in 2017. What caused their death?
           How did the causes of death change over time and differ between different countries and world regions?
@@ -54,8 +48,15 @@
 
 <table>
   <section >
+    <div class="container">
+      <img class="container__image" src="images/shock1.jpg" style="width:150%;">
+      <div class="container__text">
+        <h2>Who is the culprit in Fatality?</h2>
+        <p>"56 million people died in 2017". What caused their death?</p><br>
+      </div>
+    </div>
     <p id="disclaimer">Our Approach</p>
-    <p id="approach">By virtue of the map displayed below we attempt to identify the worst affected countries affected by each cause of fatality. Key point is we have normailzed the numbers to better understand the gravity. Bigger the size of the circle, worst is the impact. </p>
+    <p id=approach>By virtue of the map displayed below we attempt to identify the worst affected countries affected by each cause of fatality. Key point is we have normalized the numbers to better understand the gravity. Bigger the size of the circle, worst is the impact. </p>
   </section>
   <section>
   <div id="wrapper">
@@ -73,6 +74,7 @@
 
 <!-- /////////////////////////////////Second Sketch//////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////// -->
+  <section>
   <div class="form-group col-md-4">
     <label>Year</label>
     <select class="form-control" id=years>
@@ -107,6 +109,12 @@
     </select>
   </div>
   <div id="container"></div>
+</section>
+
+<section>
+  <p id=approach2>In this next visualization, we show seven causes of death by gender, male and female. You can play by selecting the country, the cause of death and the year!</p>
+  <div id="tableauViz"></div>
+</section>
 
 
 
@@ -114,7 +122,8 @@
 
 
   <section>
-         <div id="sketch-holder"><script src="sketch.js"></script></div>
+         <!-- <div id="sketch-holder"><script src="sketch.js"></script></div> -->
+         <div><script src="sketch2.js"></script></div>
  </section>
 
 </table>
