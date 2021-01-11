@@ -46,6 +46,9 @@ p#approach{
 p#approach2{
   font-family: "Trebuchet MS",cursive
 }
+p.NormalText{
+  font-family: "Trebuchet MS",cursive
+}
 
 section {
     width: 960px;
@@ -62,6 +65,10 @@ h3#chartTitle {
   /* text-align: center; */
 }
 
+h3.chartTitle {
+  font-size: 20px;
+  font-family: "Helvetica Neue";
+}
 
 .container {
   /* border: 3px solid blue; */

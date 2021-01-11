@@ -48,9 +48,6 @@ const chart = Highcharts.chart('container', {
     },{
       name: 'Nutritional Deficiencies',
       y: 562278
-    },{
-      name: 'Other',
-      y: 18354048
     }]
   }]
 });
@@ -84,10 +81,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 562278
-    },{
-      name: 'Other',
-      y: 18354048
-      }
+    }
     ]})
   } else if (menu.value == '1991'){
     chart.series[0].update({data: [{
@@ -113,10 +107,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 555138
-    },{
-      name: 'Other',
-      y: 18604873
-      }
+    }
     ]})
   } else if (menu.value == '1992'){
     chart.series[0].update({data: [{
@@ -142,10 +133,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 545896
-    },{
-      name: 'Other',
-      y: 18624136
-      }
+    }
     ]})
   } else if (menu.value == '1993'){
     chart.series[0].update({data: [{
@@ -171,10 +159,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 535542
-    },{
-      name: 'Other',
-      y: 18803735
-      }
+    }
     ]})
   } else if (menu.value == '1994'){
     chart.series[0].update({data: [{
@@ -200,10 +185,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 528572
-    },{
-      name: 'Other',
-      y: 19408884
-      }
+    }
     ]})
   } else if (menu.value == '1995'){
     chart.series[0].update({data: [{
@@ -229,10 +211,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 595296
-    },{
-      name: 'Other',
-      y: 19037989
-      }
+    }
     ]})
   } else if (menu.value == '1996'){
     chart.series[0].update({data: [{
@@ -258,10 +237,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 576962
-    },{
-      name: 'Other',
-      y: 19037989
-      }
+    }
     ]})
   } else if (menu.value == '1997'){
     chart.series[0].update({data: [{
@@ -287,10 +263,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 564000
-    },{
-      name: 'Other',
-      y: 19102808
-      }
+    }
     ]})
   } else if (menu.value == '1998'){
     chart.series[0].update({data: [{
@@ -316,10 +289,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 550464
-    },{
-      name: 'Other',
-      y: 19165349
-      }
+    }
     ]})
   } else if (menu.value == '1999'){
     chart.series[0].update({data: [{
@@ -345,10 +315,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 527953
-    },{
-      name: 'Other',
-      y: 19298570
-      }
+    }
     ]})
   } else if (menu.value == '2000'){
     chart.series[0].update({data: [{
@@ -374,10 +341,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 528967
-    },{
-      name: 'Other',
-      y: 19267528
-      }
+    }
     ]})
   } else if (menu.value == '2001'){
     chart.series[0].update({data: [{
@@ -403,10 +367,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 511355
-    },{
-      name: 'Other',
-      y: 19187387
-      }
+    }
     ]})
   } else if (menu.value == '2002'){
     chart.series[0].update({data: [{
@@ -432,10 +393,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 493843
-    },{
-      name: 'Other',
-      y: 19154123
-      }
+    }
     ]})
   } else if (menu.value == '2003'){
     chart.series[0].update({data: [{
@@ -461,10 +419,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 400070
-    },{
-      name: 'Other',
-      y: 19081063
-      }
+    }
     ]})
   } else if (menu.value == '2004'){
     chart.series[0].update({data: [{
@@ -490,10 +445,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 385196
-    },{
-      name: 'Other',
-      y: 19213004
-      }
+    }
     ]})
   } else if (menu.value == '2005'){
     chart.series[0].update({data: [{
@@ -519,10 +471,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 371991
-    },{
-      name: 'Other',
-      y: 190442813
-      }
+    }
     ]})
   } else if (menu.value == '2006'){
     chart.series[0].update({data: [{
@@ -548,10 +497,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 360975
-    },{
-      name: 'Other',
-      y: 18844513
-      }
+    }
     ]})
   } else if (menu.value == '2007'){
     chart.series[0].update({data: [{
@@ -577,10 +523,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 350546
-    },{
-      name: 'Other',
-      y: 18704763
-      }
+    }
     ]})
   } else if (menu.value == '2008'){
     chart.series[0].update({data: [{
@@ -606,10 +549,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 341763
-    },{
-      name: 'Other',
-      y: 18820712
-      }
+    }
     ]})
   } else if (menu.value == '2009'){
     chart.series[0].update({data: [{
@@ -635,10 +575,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 334927
-    },{
-      name: 'Other',
-      y: 18461475
-      }
+    }
     ]})
   } else if (menu.value == '2010'){
     chart.series[0].update({data: [{
@@ -664,10 +601,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 338265
-    },{
-      name: 'Other',
-      y: 18580375
-      }
+    }
     ]})
   } else if (menu.value == '2011'){
     chart.series[0].update({data: [{
@@ -693,10 +627,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 326288
-    },{
-      name: 'Other',
-      y: 18121168
-      }
+    }
     ]})
   } else if (menu.value == '2012'){
     chart.series[0].update({data: [{
@@ -722,10 +653,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 306106
-    },{
-      name: 'Other',
-      y: 17850881
-      }
+    }
     ]})
   } else if (menu.value == '2013'){
     chart.series[0].update({data: [{
@@ -751,10 +679,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 294747
-    },{
-      name: 'Other',
-      y: 17610346
-      }
+    }
     ]})
   } else if (menu.value == '2014'){
     chart.series[0].update({data: [{
@@ -780,10 +705,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 285607
-    },{
-      name: 'Other',
-      y: 17526209
-      }
+    }
     ]})
   } else if (menu.value == '2015'){
     chart.series[0].update({data: [{
@@ -809,10 +731,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 278919
-    },{
-      name: 'Other',
-      y: 17373941
-      }
+    }
     ]})
   } else if (menu.value == '2016'){
     chart.series[0].update({data: [{
@@ -838,10 +757,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 271435
-    },{
-      name: 'Other',
-      y: 17261632
-      }
+    }
     ]})
   } else if (menu.value == '2017'){
     chart.series[0].update({data: [{
@@ -867,10 +783,7 @@ function generateData(event) {
     },{
       name: 'Nutritional Deficiencies',
       y: 266654
-    },{
-      name: 'Other',
-      y: 16988761
-      }
+    }
     ]})
   }
 }

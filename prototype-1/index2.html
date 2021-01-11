@@ -2,15 +2,42 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.3/examples/carousel/">
+
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
-    <title>Loooool</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.min.js"></script>
+
+    <title>Quantity of deaths over the time</title>
   </head>
-  <body onload="initViz();">
 
-    <div id="container"></div>
+  <body onload="initViz();">
+    <div class="introduction">
+      <div id="text">
+        <h1 id="main">Quantity of deaths over the time by gender</h1>
+        <nav>
+          <a href="demo.html" style="float: right; padding-right: 10px;">Home</a>
+        </nav>
+        <p id="disclaimer"><b>Disclaimer: </b> We are novices, so sorry for the non-solid UI.</p>
+      </div>
+    </div>
+
+    <section>
     <div class="form-group col-md-4">
+      <p class="NormalText">The following pie chart represent the total cause of death over the years.
+        This visualization is just to have a general idea of what is going on in the world. The main
+      visualization is the second one, where you can see more detailed data on gender and ages.</p>
+      <h3 id="chartTitle">Select the year for this visualization!</h3>
       <label>Year</label>
       <select class="form-control" id=years>
         <option selected value='1990'>1990</option>
@@ -43,8 +70,21 @@
         <option value='2017'>2017</option>
       </select>
     </div>
+    <div id="container"></div>
+      <p class="NormalText">It is fascinating how cause of deaths evolute over time. Since Cardiovascular problems seems to be steady over time, could there be any scientific progress to decrease the number of deaths caused it?</p>
+  </section>
 
-    <div id="tableauViz"></div>
+    <section>
+      <p id=approach2>In this next visualization, we show seven causes of death by gender, male and female. You can play by selecting the country, the cause of death and the year! </p>
+      <p class="NormalText">You can click on the play button, but be carefull, the visualization is processing a large amount of data, so it may take a while. You better use the slider to choose the year!</p>
+      <h3 class="chartTitle">Select the country, death cause and year for this visualization!</h3>
+      <div id="tableauViz"></div>
+
+      <p class="NormalText">It is interesting to see that people start dying from Alzheimer at the age of 40, but Cancers don't discriminate in age; even babies die because of it.
+      Thanks to vaccines, death by Tuberculosis has reduced over the years. What other things can you say about the data?<p>
+
+      <p class="NormalText">Could be make a better visualization to see how this causes of death evolute over the time? Let's see the next visualization (go to the home and click on the next one)!</p>
+    </section>
 
     <section>
       <div id="sketch"><script src="sketch2.js"></script></div>
